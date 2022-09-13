@@ -1,0 +1,81 @@
+@font-face{
+    font-family: tvcd;
+    src: url(https://static-assets.codecademy.com/blog/Tvcd-d92gK.ttf);
+  }
+  
+  html, body{
+    height: 100%;
+  }
+  
+  html{
+      background-image: url(https://static-assets.codecademy.com/blog/clouds-small.png);
+  }
+  
+  body {
+    color: #000;
+    box-sizing: border-box;  
+    font-family: tvcd, sans-serif;
+    cursor: url(https://static-assets.codecademy.com/blog/pointer.png), auto;
+  }
+  
+  h1{
+    text-align: center;
+    font-size: 48px;
+  }
+  
+  h2{
+    text-align: center;
+  }
+  
+  p{
+    font-size: 26px;
+  }
+  
+  img{
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+  }
+  
+  #container{
+    width: 85%;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-bottom: 150px;
+  }
+  
+  #leftImage, #rightImage{
+    width: calc(50% - 20px);
+    max-width: 500px;
+    height: 50%;
+    max-height: 500px;
+    overflow: hidden;
+    background: white;
+    display: inline-block;
+    cursor: url(https://static-assets.codecademy.com/blog/hand.png), pointer;
+  }
+  
+  #leftImage:hover, #rightImage:hover{
+    border: solid 5px white;
+  }
+  
+  #correct, #incorrect, #replay{
+    display: none;
+    text-align: center;
+  }
+  
+  #replay{
+    position: relative;
+    margin: auto;
+    font-size: 20px;
+    font-family: tvcd, sans-serif;
+    padding-top: 8px;
+    cursor: url(https://static-assets.codecademy.com/blog/hand.png), pointer;
+    border: solid 1px;
+    padding: 10px;
+  }
+  
+  #replay:hover{
+    background-color: gray;
+  }
